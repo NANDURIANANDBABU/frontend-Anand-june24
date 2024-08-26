@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#23cf51;
+            margin:0;
+            padding:0;
+        }
+        main,section{
+            background-color:white;
+        }
+        section{
+            padding:30px;
+            border:1px solid white;
+            border-radius:10px;
+            margin:30px 20px;
+        }
+        #a{
+            background-color:blue;
+            color:white;
+        }
+        #b{
+            background-color:#bdc9c1;
+        }
+        #c{
+            background-color:#403c66;
+            color:white;
+        }
+        #d{
+            background-color:#d21c2e;
+            color:white;
+
+        }
+        #e{
+            background-color:#099b15;
+            color:white;
+        }
+        #button{
+            margin:20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>My to-do list</h1>
+            <h4><i>Double-click an item to mark it complete</i></h4>
+            <label for="i"></label>
+            <input type="text" name="name" id="i">
+            <button id="a">ADD</button>
+            <div>
+                <ol>
+                   <li>My</li>
+                   <li id="b"><del>to do</del></li>
+                   <li>list</li>
+                </ol>
+            </div>
+            <button id="c">Clear completed</button>
+            <button id="d">Empty list</button>
+            <button id="e">Save list</button>
+        </section>
+    </main>
+    
+    
+    
+</body>
+</html>

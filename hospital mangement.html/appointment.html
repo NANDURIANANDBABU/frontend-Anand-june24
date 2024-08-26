@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+    <header>
+        <h1>Book an appointment</h1>
+    </header>
+    <main>
+        <section class="appointment-form">
+            <h2>Appointment details</h2>
+            <form action="book_appointment.html" method="POST">
+                <label for="doctor">Select doctors:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="dr_anand">Dr.anand</option>
+                    <option value="dr_jones">Dr.babu</option>
+                    <!--Add more doctor options-->
+                </select>
+                <label for="date">select date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+
+
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        &copy;2024 Hospital Management System.All rights reserved.
+    </footer>
+
+    
+</body>
+</html>

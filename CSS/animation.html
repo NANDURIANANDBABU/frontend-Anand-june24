@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            width:300px;
+            height:100px;
+            background-color:red;
+            animation-name:anand;
+            animation-duration:5s;
+            position:relative;
+            animation-iteration-count:2;
+            
+        
+        }
+        #o{
+            animation-timing-function:linear;
+            background-color:green;
+        }
+        #t{
+            animation-timing-function:ease;
+            background-color:#806000;
+        }
+        #th{
+            animation-timing-function:ease-in;
+            background-color:#e2c907;
+        }
+        #f{
+            animation-timing-function:ease-out;
+            background-color:#0f0080;
+        }
+        #fi{
+            animation-timing-function:ease-in-out;
+            background-color:#ed0909;
+        }
+        
+        @keyframes anand{
+            /* 0%{
+                background-color:green;
+                left:0px;
+                top:0px;
+
+            }
+            25%{
+                background-color:#803700;
+                left:300px;
+                top:0px;
+                border-radius:25%;
+
+                
+            }
+            50%{
+                background-color:#80006b;
+                left:300px;
+                top:300px;
+                border-radius:50%;
+                
+            }
+            75%{
+                background-color:#09a6cd;
+                left:200px;
+                top:300px;
+                
+            }
+            100%{
+                background-color:#2d063a;
+                left:0px;
+                top:0px;
+
+                
+            } */
+            from{
+                left:0px;
+
+
+            }
+            to{
+                left:600px;
+
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="o">linear</div>
+    <div id="t">ease</div>
+    <div id="th">ease-in</div>
+    <div id="f">ease-out</div>
+    <div id="fi">ease-in-out</div>
+    
+</body>
+</html>

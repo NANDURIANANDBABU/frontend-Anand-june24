@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter task</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main">
+        <h1 id="balu">Count</h1>
+        <p id="counterValue" class="counter-value">0</p>
+        <button onclick="onDecrement()" class="ch">Decrement</button>
+        <button onclick="reset()" class="ch">Reset</button>
+        <button onclick="onIncrement()" class="ch">Increment</button>
+
+    </div>
+   
+    <script>
+        let counterElement=document.getElementById("counterValue");
+        
+    
+        function onIncrement(){
+            let previousCounterValue=counterElement.textContent;
+            let updatedCountervalue=parseInt(previousCounterValue) + 1;
+            counterElement.textContent=updatedCountervalue;
+
+            if (updatedCountervalue>0){
+                counterElement.style.color="green";
+
+            }
+            else if (updatedCountervalue<0){
+                counterElement.style.color="red";
+
+
+            }
+            else{
+                counterElement.style.color="blue";
+                
+            }
+
+        }
+        function onDecrement(){
+            let previousCounterValue=counterElement.textContent;
+            let updatedCountervalue=parseInt(previousCounterValue) - 1;
+            counterElement.textContent=updatedCountervalue;
+
+            if (updatedCountervalue>0){
+                counterElement.style.color="green";
+
+            }
+            else if (updatedCountervalue<0){
+                counterElement.style.color="red";
+
+
+            }
+            else{
+                counterElement.style.color="blue";
+                
+            }
+
+        }
+        function reset(){
+            updatedCountervalue=0;
+            counterElement.textContent=updatedCountervalue;
+            counterElement.style.color="blue";
+
+
+        }
+        
+     
+
+    </script>
+   
+</body>
+</html>

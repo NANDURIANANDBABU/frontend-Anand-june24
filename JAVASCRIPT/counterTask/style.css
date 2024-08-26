@@ -1,0 +1,28 @@
+.main{
+    background-color:white;
+    width:250px;
+    height:200px;
+    margin-left:500px;
+    padding:40px;
+    margin-top:150px;
+    border:1px solid white;
+    border-radius:20px;
+   
+
+}
+#balu{
+    text-align:center;
+}
+.ch{
+    background-color:hsl(186, 47%, 63%);
+    color:black;
+    padding:10px;
+    border-radius:20px;
+    font-size:small;
+    font-weight:bolder
+}
+#counterValue{
+    text-align:center;
+    font-size:75px;
+    font-weight:bolder;
+}
